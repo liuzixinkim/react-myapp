@@ -1,0 +1,79 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.header-bar-wrap{
+    position:fixed;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index:100;
+    width:100%;
+    max-width:rem(750);
+    height:rem(87);
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    margin:0;
+    padding:0;
+    //padding-top: Screen.isIos ? 20 : 0;
+    padding-top: 0;
+    background-color:#fff;
+    border-bottom:solid rem(1) $border;
+
+    .inner{
+      display: flex;
+      flex:1;
+      flex-direction:row;
+      height:rem(87);
+      width:100%;
+    }
+    .backBtn{
+      display: flex;
+      height: rem(38);
+      width:rem(38);
+      background:url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/arrow2@2x.png') no-repeat right center;
+      background-size: rem(38) rem(38);
+    }
+    .leftWrap{
+        display: flex;
+        flex:1;
+        height:rem(87);
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:center;
+        margin-left:rem(24);
+    }
+    .leftText{
+        color:$titColor;
+        font-size:rem(30) 
+    }
+    .titleWrap{
+        display: flex;
+        flex:2;
+        width:70%;
+        height:rem(87);
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+    }
+    .titleText{
+        color:$titColor;
+        font-size:rem(38);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .rightWrap{
+        flex:1;
+        height:rem(87);
+        flex-direction:row;
+        justify-content:flex-end;
+        align-items:center;
+        margin-right:rem(24)
+    }
+    .rightText{
+        color:$titColor;
+        font-size:rem(30) 
+    }
+}

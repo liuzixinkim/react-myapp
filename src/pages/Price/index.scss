@@ -1,0 +1,144 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.priceOrder {
+    padding-top: rem(87);
+
+    .banner {
+        width: rem(750);
+    }
+
+    .form {
+        padding: rem(60) rem(24) 0;
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #909396;
+        }
+
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #909396;
+        }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #909396;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #909396;
+        }
+
+        input {
+            display: block;
+            width: rem(622);
+            padding: 0 rem(40);
+            line-height: rem(84);
+            border: 1px solid #dcdcdc;
+            border-radius: rem(8);
+            margin-bottom: rem(20);
+            color: #585162;
+            font-size: rem(28);
+        }
+
+        .address {
+            display: flex;
+            justify-content: space-between;
+
+            select {
+                display: block;
+                width: rem(340);
+                padding: 0 rem(40);
+                font-size: rem(28);
+                height: rem(84);
+                border-radius: rem(8);
+                border: 1px solid #dcdcdc;
+                background: url(http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/tab_down@3x.png) no-repeat rem(300) center;
+                background-size: rem(16) rem(10);
+                appearance: none;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+            }
+        }
+
+        .submit {
+            width: 100%;
+            height: rem(84);
+            font-size: rem(34);
+            color: #fff;
+            background: #3cbea0;
+            line-height: rem(84);
+            text-align: center;
+            border-radius: rem(8);
+            border: 0 none;
+            margin-top: rem(60);
+        }
+    }
+
+    .sucessBox {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .msg {
+            width: rem(488);
+            height: rem(533);
+            background: url("http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/price/submit_bg@3x.png") no-repeat 0 0;
+            background-size: rem(488) rem(443);
+
+            .text {
+                position: relative;
+                padding: rem(192) rem(38) 0;
+                width: rem(409);
+                height: rem(253);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    color: #f36e41;
+                    font-size: rem(38);
+                    margin-bottom: rem(20);
+                }
+
+                p {
+                    color: #909396;
+                    font-size: rem(28);
+                    line-height: rem(40);
+                }
+
+                .close {
+                    width: rem(48);
+                    height: rem(48);
+                    position: absolute;
+                    right: 0;
+                    top: rem(128);
+                }
+            }
+
+            .button {
+                width: rem(140);
+                height: rem(60);
+                font-size: rem(30);
+                line-height: rem(60);
+                color: #fff;
+                background: #ffb668;
+                border-radius: rem(30);
+                border: 0 none;
+                margin: rem(30) auto 0;
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}

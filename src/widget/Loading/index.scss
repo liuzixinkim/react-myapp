@@ -1,0 +1,32 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.loading-container {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    z-index:9990;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    max-width: rem(750);
+    width:100%;
+    background-color: rgb(255, 255, 255);
+
+  .icon{
+    margin:0;
+    width:rem(220);
+    height:rem(220);
+    margin-top:10%;
+  }
+  .text{
+    margin-top:rem(24);
+    font-size:rem(30);
+    color:#909396;
+  }
+
+}

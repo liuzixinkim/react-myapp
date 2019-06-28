@@ -1,0 +1,195 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.index-section-wrap{
+  position: relative;
+  background-color:#fff;
+  /*height:rem(688);
+  overflow:hidden;*/
+  padding-bottom: rem(10);
+  .imageWrap{
+    position:relative;
+    width:100%;
+    max-height:rem(562);
+  }
+  .avatar {
+    display: block;
+    padding-right: 0.24rem;
+    color: #3cbea0;
+    height: 0.52rem;
+    width: 0.52rem;
+    img {
+        display: block;
+        width:100%;
+        border-radius: 50%;
+    }
+  }
+
+  .pic {
+    display: flex;
+    align-items: center;
+    width:100%;
+    max-height:rem(562);
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+    // background: url('http://src.leju.com/imp/imp/deal/7d/c0/9/8ae1ff8d841b4f67c3368b90377_p24_mk24.jpg') no-repeat;
+    // background-size:100% 100%;
+  }
+
+  a{
+    display: block;
+    width:100%;
+    /*height:rem(682);*/
+  }
+  .label{
+    position:absolute;
+    right:0;
+    top:rem(24);
+    display:flex;
+    flex-direction:row;
+  }
+  .labelItemWrap{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    justify-content:center;
+    align-items:center;
+    border-radius:rem(30);
+    margin-right:rem(24);
+    width:rem(115);
+    height:rem(54);
+  }
+  .labelItem{
+    display: block;
+    font-size:rem(30);
+    color:#fff;
+    text-align:center;
+  }
+  .msg {
+    height:rem(120);
+    position:relative;
+
+  }
+  .tit-wrap{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:rem(15);
+  }
+  .title {
+    font-size:rem(34);
+    color:#515862;
+    margin-left:rem(24);
+    width:70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .price2 {
+    font-size:rem(34);
+    color:#3cbea0;
+    margin-right:rem(24);
+    white-space: nowrap;
+  }
+  .eye-icon{
+    display: inline-block;
+    height: rem(20);
+    width:rem(26);
+    background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/views_icon@2x.png') no-repeat center center;
+    background-size: rem(26) rem(20);
+  }
+  .pv-wrap{
+    /*margin-top:rem(10);*/
+    padding-left:rem(24);
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    box-sizing: border-box;
+  }
+  .views{
+    font-size:rem(24);
+    color:#909396;
+    margin-left:rem(10);
+  }
+  .names-btn{
+    font-size:rem(24);
+    color:#3cbea0;
+    margin-right:rem(24);
+  }
+  .names-designer{
+    padding-right:rem(24);
+    display: block;
+    //text-indent: -9999px;
+    color:#3cbea0;
+    height: rem(52);
+    width:rem(52);
+    background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/FooterNav/designer_tab_on@2x.png') no-repeat center center;
+    background-size: rem(52) rem(52);
+  }
+  .names-company{
+    display: block;
+    padding-right:rem(24);
+    //text-indent: -9999px;
+    color:#3cbea0;
+    height: rem(52);
+    width:rem(52);
+    background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/FooterNav/conpany_tab_on@2x.png') no-repeat center center;
+    background-size: rem(52) rem(52);
+  }
+
+.pop_box { 
+  position: absolute;
+  right: 1%;
+  bottom: rem(-300);
+  width: 98%;
+  border: 1px solid #cccccc; 
+  height: rem(300); 
+  border-radius: rem(20); 
+  background-color: #ebeaef; 
+  display: block; 
+  z-index: 30; 
+  box-sizing: border-box;
+}
+.pop_box i { 
+    width: rem(30); 
+    height: rem(22); 
+    background: url(http://src.leju.com/imp/imp/deal/1a/73/e/95230356b8f6ae8841bd3cfe765_p24_mk24.png) no-repeat;
+    background-size: 100% 100%; 
+    position: absolute; 
+    right: rem(24); 
+    top: rem(-22); 
+ }
+.pop_box .pop1 { 
+  width: 100%;
+  background-color: #fff; 
+  height: rem(160); 
+  overflow: hidden; 
+  border-radius: 0.2rem 0.2rem 0 0;
+}
+.pop_box .pop1 .tx { 
+  display: block;
+  margin: rem(10); 
+  width: rem(100); 
+  height: rem(100); 
+  border-radius: 50%; 
+}
+.pop_box img.erw { 
+    position: absolute;
+    right: rem(10); 
+    top: rem(10); 
+    width: rem(220); 
+    height: rem(220); 
+    background: #fff; 
+    border-radius: rem(20); 
+}
+.gz{
+  box-sizing: border-box;
+  padding:rem(10);
+  p{
+    font-size: rem(14);
+    color:#000;
+  }
+}
+}

@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+
+
+@mixin point {
+  color: #3cbea0;
+}
+
+.App{
+  margin-top: rem(88);
+  margin-bottom: rem(100);
+}
+
+.list-tab{
+  border-top: rem(20) solid #eff4f5;
+  height:rem(90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom:1px solid #e3e3e3;
+  span{
+    margin:0 rem(44);
+    line-height:rem(90);
+  }
+  .point{
+    @include point;
+  }
+}
+
+.load-state{
+  width:100%;
+  height:rem(90);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#909396;
+  font-size: rem(28);
+}
+.designDetailBox .backBtn {
+    background:none;
+}

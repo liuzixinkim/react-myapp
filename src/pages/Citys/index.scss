@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+.city-list-wrap{
+  .citySearchBox{
+      display: flex;
+        justify-content:center;
+        align-items:center;
+        margin-top: rem(112);
+        margin-bottom: rem(30);
+        height:rem(60);
+
+    .inputBox{
+      display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:center;
+        height:rem(60);
+        width:rem(702);
+        background-color:#f0f3f5;
+        border-radius:rem(30)
+    }
+    .inputText{
+      display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin-left: rem(14);
+        padding:0;
+        font-size:rem(30);
+        height:rem(60);
+        width:rem(528);
+        border:none;
+        background-color:#f0f3f5;
+    }
+
+    .searchIconwWrap{
+      display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        margin-left:rem(40);
+        width:rem(32);
+        height: rem(32);
+        background:url(http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/search_icon@2x.png) no-repeat left center;
+        background-size: rem(32) rem(32);
+    }
+
+    .clearIconwWrap{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items:center;
+        width:rem(64);
+        height:rem(60);
+        background:url(http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/clear_icon@2x.png) no-repeat right center;
+        background-size: rem(32) rem(32);
+    }
+}
+
+    .sectionView {
+        width:100%;
+        background-color: #fff
+    }
+    .sectionText {
+        margin-left:rem(24);
+        margin-bottom:rem(24);
+        color: #909396;
+        font-size:rem(30)
+    }
+
+    .spellName{
+        font-size:rem(28);
+        color:#515862;
+    }
+
+.citylist-wrap {
+        flex: 1;
+        width: 100%;
+        background-color: #fff;
+        justify-content: flex-start;
+
+    .sectionView {
+        width: 100%;
+        background-color: #fff
+    }
+    .sectionText {
+        display: block;
+        margin-left:rem(24);
+        margin-bottom:rem(24);
+        color: #909396;
+        font-size:rem(30)
+    }
+
+    .sectionRow{
+        display: flex;
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:center;
+        width:100%;
+        margin:0;
+        margin-bottom:rem(50);
+        margin-left:rem(0);
+        background-color:#fff
+    };
+
+    .sectionLabelWrap{
+      display: flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        height:rem(70);
+        width:rem(160);
+        margin-left:rem(20);
+        border-width:1px;
+        border-style:solid;
+        border-color:$border;
+        border-radius:rem(50);
+    };
+    .sectionLabel{
+        display: flex;
+        align-items:center;
+        color: #515862;
+        font-size:rem(28);
+    };
+    .sortLettersWrap{
+        display: flex;
+        /*justify-content:center;*/
+        align-items:flex-start;
+        width:100%;
+        height:rem(50);
+        padding-left:rem(24);
+        background-color:$background;
+        box-sizing: border-box;
+    };
+
+    .sortLetters{
+
+        font-size:rem(30);
+        color:#909396;
+        background-color:$background
+    };
+    .spellNameWrap{
+      display: flex;
+        /*justify-content:center;*/
+        height:rem(90);
+        align-items: center;
+        border-bottom-color: $border;
+        border-bottom-width: 1px;
+        margin-left:rem(24);
+    };
+    .spellName{
+
+        font-size:rem(28);
+        color:#515862;
+    }
+}
+
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+#footerBar {
+    width:100%;
+}
+.footerBar {
+    width: rem(750);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    line-height: rem(100);
+
+    .item {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img {
+        width: rem(30);
+        height: rem(30);
+        margin-right: rem(10);
+    }
+
+    span {
+        color: #fff;
+        font-size: rem(28);
+    }
+}
+

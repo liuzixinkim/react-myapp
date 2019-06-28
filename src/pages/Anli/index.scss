@@ -1,0 +1,304 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.anliDetailPage {
+    background: #f0f3f5;
+    padding-bottom: rem(100);
+
+    .coverBox {
+        position: relative;
+        background: #fff;
+
+        img {
+            display: block;
+            width: 100%;
+            // background: url(http://src.leju.com/imp/imp/deal/7d/c0/9/8ae1ff8d841b4f67c3368b90377_p24_mk24.jpg) no-repeat;
+            // background-size: 100% 100%;
+        }
+
+        .backBtn {
+            position: absolute;
+            left: rem(20);
+            top: rem(26);
+            width: rem(48);
+            height: rem(48);
+            background: none;
+        }
+
+        .coverText {
+            position: absolute;
+            bottom: rem(50);
+            left: 0;
+            width: 100%;
+
+            div {
+                text-align: center;
+
+                .label {
+                    font-size: rem(28);
+                    color: #fff;
+                    margin-bottom: rem(20);
+                }
+            }
+
+            .name {
+                font-size: rem(38);
+                color: #fff;
+            }
+        }
+    }
+
+    .base-infor {
+        border-bottom: 1px solid #e3e3e3;
+
+    }
+
+    .company {
+        background: #fff;
+        overflow: hidden;
+        padding: 0 rem(24);
+        line-height: rem(100);
+        border-bottom: 1px solid #e3e3e3;
+
+        .icon {
+            float: left;
+            width: rem(48);
+            height: rem(48);
+            margin-top: rem(26);
+        }
+
+        p {
+            float: left;
+            margin-left: rem(10);
+            font-size: rem(38);
+            color: #515862;
+        }
+
+        .button {
+            float: right;
+            margin-top: rem(28);
+            width: rem(33);
+            height: rem(18);
+            padding: rem(10);
+        }
+    }
+
+    .price {
+        background: #fff;
+        overflow: hidden;
+        padding: 0 rem(24);
+        line-height: rem(100);
+
+        .icon {
+            float: left;
+            width: rem(30);
+            height: rem(30);
+            margin-top: rem(35);
+        }
+
+        .desc {
+            float: left;
+            margin-left: rem(10);
+            font-size: rem(28);
+            color: #909396;
+        }
+
+        .number {
+            float: left;
+            margin-left: rem(10);
+            font-size: rem(28);
+            color: #515862;
+        }
+
+        div {
+            float: left;
+        }
+
+        .time {
+            margin-left: rem(68);
+        }
+    }
+
+    .companyInfo {
+        background: #fff;
+        padding: rem(20) rem(24);
+        border-bottom: 1px solid #e3e3e3;
+
+        .logo {
+            overflow: hidden;
+
+            img {
+                float: left;
+                width: rem(124);
+                height: rem(124);
+                margin: 0 rem(40) 0 rem(24);
+            }
+
+            .name {
+                font-size: rem(34);
+                color: #515862;
+                margin: rem(16) 0 rem(32);
+            }
+
+            .location {
+                font-size: rem(28);
+                color: #909396;
+            }
+        }
+
+        .service {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            line-height: rem(56);
+            margin-top: rem(24);
+
+            span {
+                display: inline-block;
+                width: rem(164);
+                margin: 0 rem(5) rem(24);
+
+            }
+
+            .label {
+                font-size: rem(26);
+                color: #515862;
+            }
+
+            .item {
+                background: #e1faf4;
+                color: #5e6671;
+            }
+        }
+
+        .button {
+            width: 0.33rem;
+            height: 0.18rem;
+        }
+    }
+
+    .anliDetailFixedNav {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        z-index: 3;
+        width:100%;
+        max-width: rem(750);
+        border-bottom: 1px solid #e3e3e3;
+        .backBtn {
+            position: absolute;
+            left: rem(20);
+            top: rem(26);
+            width: rem(38);
+            height: rem(38);
+            background: none;
+        }
+        .tabBox {
+            padding: 0 0 0 rem(74);
+            ul {
+                border:0 none;
+                width:6.52rem;
+            }
+        }
+        
+
+    }
+    .anliDetailFixedNav.hidden {
+        display: none;
+    }
+
+    .tabBox {
+        padding: 0 rem(24);
+        background: #fff;
+        overflow: hidden;
+
+        ul {
+            border-bottom: 1px solid #e3e3e3;
+            height: rem(90);
+            width: rem(702);
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+        }
+
+        li {
+            display: inline-block;
+            padding:0 0.24rem;
+            text-align: center;
+
+            span {
+                display: inline-block;
+                line-height: rem(87);
+                color: #515862;
+                font-size: rem(28);
+                padding: 0 rem(15);border-bottom: 3px solid #fff;
+            }
+        }
+
+        .active {
+            span {
+                color: #3cbea0;
+                border-bottom: 3px solid #3cbea0;
+            }
+
+        }
+    }
+
+    .moduleTitle {
+        background: #fff;
+
+        .title {
+            display: flex;
+            padding: rem(40) rem(24) rem(30);
+
+            img {
+                width: rem(48);
+                height: rem(48);
+            }
+
+            div {
+                font-size: rem(34);
+                color: #515862;
+                margin-left: rem(10);
+            }
+        }
+
+        .info {
+            color: #515862;
+            font-size: rem(28);
+            line-height: rem(42);
+
+            img {
+                width: 100%;
+            }
+
+            .button {
+                width: 0.22rem;
+                height: 0.12rem;
+            }
+        }
+
+        .infoDesc {
+            padding:rem(24) rem(24) rem(40);
+        }
+
+        .imgInfo {
+            white-space: nowrap;
+            overflow-x: auto;
+            width: rem(750);
+
+            .img {
+                display: inline-block;
+                width: auto;
+                max-width: rem(653);
+                height: rem(562);
+                margin-right:rem(10);
+                // background: url(http://src.leju.com/imp/imp/deal/7d/c0/9/8ae1ff8d841b4f67c3368b90377_p24_mk24.jpg) no-repeat;
+                // background-size: 100% 100%;
+            }
+        }
+    }
+
+
+}

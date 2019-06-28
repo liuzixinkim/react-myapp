@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+
+@mixin point {
+    color: #3cbea0;
+}
+
+@mixin title() {
+    font-size: rem(26);
+    line-height: rem(26);
+    font-weight: bold;
+    color: #515862
+}
+
+@mixin sj-label {
+    color: #5e6671;
+    background: #e1faf4;
+    text-align: center;
+    line-height: rem(56);
+    font-size: rem(26);
+    border-radius: rem(6);
+}
+
+.base-infor {
+    background: #fff;
+    padding-bottom: rem(50);
+}
+
+.designer-infor {
+    display: flex;
+
+    img {
+        display: inline-block;
+        width: rem(124);
+        height: rem(124);
+        margin: rem(54) rem(40) rem(0) rem(48);
+        border-radius: 50%;
+    }
+
+    .infor {
+
+        h4 {
+            margin: rem(50) rem(0) rem(32);
+            font-size: rem(34);
+            line-height: rem(34);
+            color: #515862;
+        }
+
+        p {
+            margin-bottom: rem(18);
+            font-size: rem(28);
+            line-height: rem(28);
+            color: #909396;
+
+            span {
+                margin-right: rem(16);
+            }
+
+            em {
+                @include point;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.charge {
+    display: flex;
+    margin-top: rem(50);
+
+    h5 {
+        @include title;
+        width: rem(165);
+        margin-left: rem(48);
+    }
+
+    p {
+        font-size: rem(26);
+        line-height: rem(26);
+        color: #515862;
+
+        em {
+            @include point;
+        }
+    }
+
+}
+
+.sj-style {
+    display: flex;
+    margin-top: rem(50);
+    flex-wrap: wrap;
+    margin-left: rem(24);
+
+    h5 {
+        @include title;
+        width: rem(155);
+        margin-left: rem(24);
+        line-height: rem(56);
+    }
+
+    span {
+        @include sj-label;
+        width: rem(120);
+        margin-right: rem(14);
+        margin-bottom: rem(24);
+    }
+}
+
+.sj-service {
+    display: flex;
+    margin-top: rem(26);
+    flex-wrap: wrap;
+    margin-left: rem(24);
+
+    h5 {
+        @include title;
+        width: rem(155);
+        margin-left: rem(24);
+        line-height: rem(56);
+    }
+
+    span {
+        @include sj-label;
+        width: rem(164);
+        margin-right: rem(16);
+        margin-bottom: rem(24);
+    }
+}
+
+.personal-infor {
+    font-size: rem(26);
+    line-height: rem(46);
+    color: #5c686f;
+    padding: rem(26) rem(24) rem(0);
+
+    em {
+        display: inline-block;
+        width: rem(60);
+        height: rem(30);
+        background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/Intro_down@2x.png') no-repeat center bottom;
+        background-size: rem(22) rem(12);
+    }
+
+    .intro {
+        background-image: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/Intro@2x.png');
+    }
+}

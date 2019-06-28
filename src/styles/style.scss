@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "scss/reset.scss";
+
+.ell{
+	width:150px;
+	height: 20px;
+	line-height: 20px;
+	@include ell();
+}
+.c1{
+	@include  arrow(right, 10px, #000);
+}
+
+.c2{
+	@include clearfix();
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.cover{
+    display: flex;
+    align-items: center;
+    width:100%;
+    max-height:rem(562);
+    overflow: hidden;
+    img{
+        // display: block;
+        width:100%;
+        // height:rem(562);
+        // background: url('http://src.leju.com/imp/imp/deal/7d/c0/9/8ae1ff8d841b4f67c3368b90377_p24_mk24.jpg') no-repeat;
+        // background-size:100% 100%;
+    }
+}
+.pic-item{
+.msg{
+    height:rem(90);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h5{
+        width:70%;
+        font-size: rem(34);
+        color:#515862;
+        margin-left: rem(24);
+        overflow: hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
+    .pv-wrap{
+        margin-right: rem(24);
+    }
+    .eye-icon{
+        display: inline-block;
+        height: rem(20);
+        width:rem(26);
+        background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/views_icon@2x.png') no-repeat center center;
+        background-size: rem(26) rem(20);
+    }
+    .views{
+        font-size:rem(24);
+        color:#909396;
+        margin-left:rem(10);
+    }
+}
+}

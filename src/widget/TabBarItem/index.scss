@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import "../../styles/scss/_base";
+
+.index-section-wrap{
+  background-color:#fff;
+  height:rem(688);
+  overflow:hidden;
+  .imageWrap{
+    position:relative;
+    width:100%;
+    height:rem(562);
+  }
+
+  a,.pic {
+    display: block;
+    width:100%;
+    height:rem(562);
+  }
+
+  .label{
+    position:absolute;
+    right:0;
+    top:rem(24);
+    display:flex;
+    flex-direction:row;
+  }
+  .labelItemWrap{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.25);
+    justify-content:center;
+    align-items:center;
+    border-radius:rem(30);
+    margin-right:rem(24);
+    width:rem(115);
+    height:rem(54);
+  }
+  .labelItem{
+    display: block;
+    font-size:rem(30);
+    color:#fff;
+    text-align:center;
+  }
+  .msg {
+    height:rem(120);
+    position:relative;
+  }
+  .tit-wrap{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:rem(15);
+  }
+  .title {
+    font-size:rem(34);
+    color:#515862;
+    margin-left:rem(24);
+  }
+  .price {
+    font-size:rem(34);
+    color:#3cbea0;
+    margin-right:rem(24);
+  }
+  .eye-icon{
+    display: inline-block;
+    height: rem(20);
+    width:rem(26);
+    background: url('http://zx.jiaju.sina.com.cn/App/RN/app/KanTuZhuangXiu/app/img/views_icon@2x.png') no-repeat center center;
+    background-size: rem(26) rem(20);
+  }
+  .pv-wrap{
+    margin-top:rem(10);
+    margin-left:rem(24);
+    flex-direction:row;
+    align-items:center
+  }
+  .views{
+    font-size:rem(24);
+    color:#909396;
+    margin-left:rem(10);
+  }
+}
